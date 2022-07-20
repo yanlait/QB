@@ -1,0 +1,401 @@
+Ticker;Name;Category
+BTC-USD;Bitcoin USD;Crypto
+ETH-USD;Ethereum USD;Crypto
+USDT-USD;Tether USD;Crypto
+USDC-USD;USD Coin USD;Crypto
+BNB-USD;Binance Coin USD;Crypto
+BUSD-USD;Binance USD USD;Crypto
+ADA-USD;Cardano USD;Crypto
+XRP-USD;XRP USD;Crypto
+SOL-USD;Solana USD;Crypto
+DOGE-USD;Dogecoin USD;Crypto
+DAI-USD;Dai USD;Crypto
+DOT-USD;Polkadot USD;Crypto
+WTRX-USD;Wrapped TRON USD;Crypto
+HEX-USD;HEX USD;Crypto
+TRX-USD;TRON USD;Crypto
+LEO-USD;UNUS SED LEO USD;Crypto
+SHIB-USD;SHIBA INU USD;Crypto
+WBTC-USD;Wrapped Bitcoin USD;Crypto
+AVAX-USD;Avalanche USD;Crypto
+YOUC-USD;yOUcash USD;Crypto
+MATIC-USD;Polygon USD;Crypto
+LTC-USD;Litecoin USD;Crypto
+STETH-USD;Lido stETH USD;Crypto
+UNI1-USD;Uniswap USD;Crypto
+FTT-USD;FTX Token USD;Crypto
+CRO-USD;Crypto.com Coin USD;Crypto
+LINK-USD;Chainlink USD;Crypto
+XLM-USD;Stellar USD;Crypto
+NEAR-USD;NEAR Protocol USD;Crypto
+ATOM-USD;Cosmos USD;Crypto
+ALGO-USD;Algorand USD;Crypto
+XMR-USD;Monero USD;Crypto
+BTCB-USD;Bitcoin BEP2 USD;Crypto
+ETC-USD;Ethereum Classic USD;Crypto
+BCH-USD;Bitcoin Cash USD;Crypto
+XCN1-USD;Chain USD;Crypto
+VET-USD;VeChain USD;Crypto
+MANA-USD;Decentraland USD;Crypto
+FLOW-USD;Flow USD;Crypto
+TONCOIN-USD;Toncoin USD;Crypto
+APE3-USD;ApeCoin USD;Crypto
+FRAX-USD;Frax USD;Crypto
+SAND-USD;The Sandbox USD;Crypto
+HBAR-USD;Hedera USD;Crypto
+ICP-USD;Internet Computer USD;Crypto
+XTZ-USD;Tezos USD;Crypto
+FIL-USD;Filecoin USD;Crypto
+TUSD-USD;TrueUSD USD;Crypto
+THETA-USD;THETA USD;Crypto
+AXS-USD;Axie Infinity USD;Crypto
+EGLD-USD;Elrond USD;Crypto
+HNT-USD;Helium USD;Crypto
+WBNB-USD;Wrapped BNB USD;Crypto
+BSV-USD;Bitcoin SV USD;Crypto
+USDP-USD;Pax Dollar USD;Crypto
+KCS-USD;KuCoin Token USD;Crypto
+EOS-USD;EOS USD;Crypto
+MKR-USD;Maker USD;Crypto
+LUNA1-USD;Terra USD;Crypto
+AAVE-USD;Aave USD;Crypto
+ZEC-USD;Zcash USD;Crypto
+USDN-USD;Neutrino USD USD;Crypto
+BTT2-USD;BitTorrent (new) USD;Crypto
+HBTC-USD;Huobi BTC USD;Crypto
+MIOTA-USD;IOTA USD;Crypto
+OKB-USD;OKB USD;Crypto
+XEC-USD;eCash USD;Crypto
+USDD-USD;USDD USD;Crypto
+KLAY-USD;Klaytn USD;Crypto
+HT-USD;Huobi Token USD;Crypto
+QNT-USD;Quant USD;Crypto
+GRT1-USD;The Graph USD;Crypto
+FTM-USD;Fantom USD;Crypto
+BAT-USD;Basic Attention Token USD;Crypto
+BTT-USD;BitTorrent USD;Crypto
+RUNE-USD;THORChain USD;Crypto
+PAXG-USD;PAX Gold USD;Crypto
+NEO-USD;Neo USD;Crypto
+WAVES-USD;Waves USD;Crypto
+CHZ-USD;Chiliz USD;Crypto
+ZIL-USD;Zilliqa USD;Crypto
+STX-USD;Stacks USD;Crypto
+LRC-USD;Loopring USD;Crypto
+GMT3-USD;Green Metaverse Token USD;Crypto
+DFI-USD;DeFiChain USD;Crypto
+DASH-USD;Dash USD;Crypto
+XAUT-USD;Tether Gold USD;Crypto
+UST-USD;TerraUSD USD;Crypto
+FRTS-USD;Fruits USD;Crypto
+CAKE-USD;PancakeSwap USD;Crypto
+ENJ-USD;Enjin Coin USD;Crypto
+CRV-USD;Curve DAO Token USD;Crypto
+FEI-USD;Fei USD USD;Crypto
+KSM-USD;Kusama USD;Crypto
+AMP-USD;Amp USD;Crypto
+KAVA-USD;Kava USD;Crypto
+CELO-USD;Celo USD;Crypto
+1INCH-USD;1inch Network USD;Crypto
+GALA-USD;Gala USD;Crypto
+HOT1-USD;Holo USD;Crypto
+MINA-USD;Mina USD;Crypto
+AR-USD;Arweave USD;Crypto
+XEM-USD;NEM USD;Crypto
+COMP1-USD;Compound USD;Crypto
+CCXX-USD;Counos X USD;Crypto
+WEMIX-USD;WEMIX USD;Crypto
+NEXO-USD;Nexo USD;Crypto
+DCR-USD;Decred USD;Crypto
+GT-USD;GateToken USD;Crypto
+XDC-USD;XDC Network USD;Crypto
+SAFE1-USD;Safe USD;Crypto
+QTUM-USD;Qtum USD;Crypto
+XYM-USD;Symbol USD;Crypto
+GNO-USD;Gnosis USD;Crypto
+KDA-USD;Kadena USD;Crypto
+BORA-USD;BORA USD;Crypto
+T-USD;Threshold USD;Crypto
+CVX-USD;Convex Finance USD;Crypto
+LUNA2-USD;Terra USD;Crypto
+HUSD-USD;HUSD USD;Crypto
+BTG-USD;Bitcoin Gold USD;Crypto
+STORJ-USD;Storj USD;Crypto
+ZRX-USD;0x USD;Crypto
+ICX-USD;ICON USD;Crypto
+SNX-USD;Synthetix USD;Crypto
+TFUEL-USD;Theta Fuel USD;Crypto
+OMG-USD;OMG Network USD;Crypto
+BIT1-USD;BitDAO USD;Crypto
+ROSE-USD;Oasis Network USD;Crypto
+IOST-USD;IOST USD;Crypto
+TTT1-USD;The Transfer Token USD;Crypto
+RVN-USD;Ravencoin USD;Crypto
+AUDIO-USD;Audius USD;Crypto
+JST-USD;JUST USD;Crypto
+IOTX-USD;IoTeX USD;Crypto
+BNX-USD;BinaryX USD;Crypto
+OSMO-USD;Osmosis USD;Crypto
+GLM-USD;Golem USD;Crypto
+NXM-USD;NXM USD;Crypto
+IMX1-USD;Immutable X USD;Crypto
+ANKR-USD;Ankr USD;Crypto
+KNC-USD;Kyber Network Crystal v2 USD;Crypto
+ONE1-USD;Harmony USD;Crypto
+TWT-USD;Trust Wallet Token USD;Crypto
+MXC-USD;MXC USD;Crypto
+SRM-USD;Serum USD;Crypto
+LPT-USD;Livepeer USD;Crypto
+ONT-USD;Ontology USD;Crypto
+LN-USD;LINK USD;Crypto
+HIVE-USD;Hive USD;Crypto
+GLMR-USD;Moonbeam USD;Crypto
+YFI-USD;yearn.finance USD;Crypto
+XCH-USD;Chia Network USD;Crypto
+CHSB-USD;SwissBorg USD;Crypto
+WAXP-USD;WAX USD;Crypto
+SC-USD;Siacoin USD;Crypto
+BAL-USD;Balancer USD;Crypto
+PLA3-USD;PlayDapp USD;Crypto
+SXP-USD;Swipe USD;Crypto
+BTRST-USD;Braintrust USD;Crypto
+POLY-USD;Polymath USD;Crypto
+CEEK-USD;CEEK VR USD;Crypto
+ELON-USD;Dogelon Mars USD;Crypto
+ENS-USD;Ethereum Name Service USD;Crypto
+UMA-USD;UMA USD;Crypto
+NFT1-USD;APENFT USD;Crypto
+SKL-USD;SKALE Network USD;Crypto
+WOO-USD;WOO Network USD;Crypto
+GUSD-USD;Gemini Dollar USD;Crypto
+ZEN-USD;Horizen USD;Crypto
+ASTR-USD;Astar USD;Crypto
+CSPR-USD;Casper USD;Crypto
+LUSD-USD;Liquity USD USD;Crypto
+SLP-USD;Smooth Love Potion USD;Crypto
+CBG-USD;Chainbing USD;Crypto
+MCT3-USD;Metacraft USD;Crypto
+SCRT-USD;Secret USD;Crypto
+CEL-USD;Celsius USD;Crypto
+KEEP-USD;Keep Network USD;Crypto
+LOOKS-USD;LooksRare USD;Crypto
+DGB-USD;DigiByte USD;Crypto
+LDO-USD;Lido DAO Token USD;Crypto
+CVC-USD;Civic USD;Crypto
+HUM-USD;Humanscape USD;Crypto
+STRAX-USD;Stratis USD;Crypto
+LSK-USD;Lisk USD;Crypto
+MX-USD;MX Token USD;Crypto
+RSR-USD;Reserve Rights USD;Crypto
+EURS-USD;STASIS EURO USD;Crypto
+PLTC-USD;PlatonCoin USD;Crypto
+NMR-USD;Numeraire USD;Crypto
+SUSHI-USD;SushiSwap USD;Crypto
+BEST-USD;Bitpanda Ecosystem Token USD;Crypto
+RNDR-USD;Render Token USD;Crypto
+RACA-USD;Radio Caca USD;Crypto
+EPS1-USD;Ellipsis USD;Crypto
+NU-USD;NuCypher USD;Crypto
+VVS-USD;VVS Finance USD;Crypto
+ONG1-USD;Ontology Gas USD;Crypto
+PEOPLE-USD;ConstitutionDAO USD;Crypto
+AAPL;Apple Inc.;Stocks
+MSFT;Microsoft Corporation;Stocks
+GOOGL;Alphabet Inc.;Stocks
+GOOG;Alphabet Inc.;Stocks
+AMZN;Amazon.com , Inc.;Stocks
+TSLA;Tesla, Inc.;Stocks
+BRK-A;Berkshire Hathaway Inc.;Stocks
+BRK-B;Berkshire Hathaway Inc.;Stocks
+UNH;UnitedHealth Group Incorporated;Stocks
+JNJ;Johnson & Johnson;Stocks
+TCEHY;Tencent Holdings Limited;Stocks
+TCTZF;Tencent Holdings Limited;Stocks
+META;Meta Platforms, Inc.;Stocks
+V;Visa Inc.;Stocks
+TSM;Taiwan Semiconductor Manufacturing Company Limited;Stocks
+JPM;JPMorgan Chase & Co.;Stocks
+XOM;Exxon Mobil Corporation;Stocks
+NVDA;NVIDIA Corporation;Stocks
+PG;The Procter & Gamble Company;Stocks
+JPM-PC;JPMorgan Chase & Co.;Stocks
+WMT;Walmart Inc.;Stocks
+RHHBY;Roche Holding AG;Stocks
+JPM-PD;JPMorgan Chase & Co.;Stocks
+RHHVF;Roche Holding AG;Stocks
+NSRGY;Nestlé S.A.;Stocks
+BABA;Alibaba Group Holding Limited;Stocks
+BABAF;Alibaba Group Holding Limited;Stocks
+RHHBF;Roche Holding AG;Stocks
+NSRGF;Nestlé S.A.;Stocks
+BAC;Bank of America Corporation;Stocks
+BAC-PK;Bank of America Corporation;Stocks
+MA;Mastercard Incorporated;Stocks
+LLY;Eli Lilly and Company;Stocks
+LVMUY;LVMH Moët Hennessy - Louis Vuitton, Société Européenne;Stocks
+LVMHF;LVMH Moët Hennessy - Louis Vuitton, Société Européenne;Stocks
+BAC-PL;Bank of America Corporation;Stocks
+PFE;Pfizer Inc.;Stocks
+CVX;Chevron Corporation;Stocks
+HD;The Home Depot, Inc.;Stocks
+KO;The Coca-Cola Company;Stocks
+ABBV;AbbVie Inc.;Stocks
+BML-PL;Bank of America Corporation;Stocks
+BAC-PE;Bank of America Corporation;Stocks
+BML-PH;Bank of America Corporation;Stocks
+BML-PG;Bank of America Corporation;Stocks
+BML-PJ;Bank of America Corporation;Stocks
+NVO;Novo Nordisk A/S;Stocks
+BAC-PB;Bank of America Corporation;Stocks
+NONOF;Novo Nordisk A/S;Stocks
+IDCBF;Industrial and Commercial Bank of China Limited;Stocks
+PEP;PepsiCo, Inc.;Stocks
+MRK;Merck & Co., Inc.;Stocks
+IDCBY;Industrial and Commercial Bank of China Limited;Stocks
+VZ;Verizon Communications Inc.;Stocks
+TOYOF;Toyota Motor Corporation;Stocks
+TMO;Thermo Fisher Scientific Inc.;Stocks
+TM;Toyota Motor Corporation;Stocks
+COST;Costco Wholesale Corporation;Stocks
+PROSY;Prosus N.V.;Stocks
+PROSF;Prosus N.V.;Stocks
+AZNCF;AstraZeneca PLC;Stocks
+AZN;AstraZeneca PLC;Stocks
+WFC-PY;Wells Fargo & Company;Stocks
+RYDAF;Shell plc;Stocks
+NVSEF;Novartis AG;Stocks
+SHEL;Shell plc;Stocks
+AVGO;Broadcom Inc.;Stocks
+ABT;Abbott Laboratories;Stocks
+WFC-PR;Wells Fargo & Company;Stocks
+WFC-PL;Wells Fargo & Company;Stocks
+BHP;BHP Group Limited;Stocks
+BHPLF;BHP Group Limited;Stocks
+WFC-PQ;Wells Fargo & Company;Stocks
+ORCL;Oracle Corporation;Stocks
+NVS;Novartis AG;Stocks
+DHR;Danaher Corporation;Stocks
+MCD;McDonald's Corporation;Stocks
+LRLCY;L'Oréal S.A.;Stocks
+ASML;ASML Holding N.V.;Stocks
+CMCSA;Comcast Corporation;Stocks
+LRLCF;L'Oréal S.A.;Stocks
+ACN;Accenture plc;Stocks
+ASMLF;ASML Holding N.V.;Stocks
+CSCO;Cisco Systems, Inc.;Stocks
+DIS;The Walt Disney Company;Stocks
+ADBE;Adobe Inc.;Stocks
+CIHHF;China Merchants Bank Co., Ltd.;Stocks
+CICHF;China Construction Bank Corporation;Stocks
+TMUS;T-Mobile US, Inc.;Stocks
+CICHY;China Construction Bank Corporation;Stocks
+CRM;Salesforce, Inc.;Stocks
+CIHKY;China Merchants Bank Co., Ltd.;Stocks
+C-PJ;Citigroup Inc.;Stocks
+BMY;Bristol-Myers Squibb Company;Stocks
+UPS;United Parcel Service, Inc.;Stocks
+NKE;NIKE, Inc.;Stocks
+NEE;NextEra Energy, Inc.;Stocks
+ACGBY;Agricultural Bank of China Limited;Stocks
+MPNGY;Meituan;Stocks
+PM;Philip Morris International Inc.;Stocks
+T;AT&T Inc.;Stocks
+WFC;Wells Fargo & Company;Stocks
+MPNGF;Meituan;Stocks
+INTC;Intel Corporation;Stocks
+RLLCF;Rolls-Royce Holdings plc;Stocks
+BACHF;Bank of China Limited;Stocks
+RTX;Raytheon Technologies Corporation;Stocks
+LIN;Linde plc;Stocks
+BYDDY;BYD Company Limited;Stocks
+BYDDF;BYD Company Limited;Stocks
+TTE;TotalEnergies SE;Stocks
+QCOM;QUALCOMM Incorporated;Stocks
+BACHY;Bank of China Limited;Stocks
+RY;Royal Bank of Canada;Stocks
+TXN;Texas Instruments Incorporated;Stocks
+PTR;PetroChina Company Limited;Stocks
+SNYNF;Sanofi;Stocks
+UNP;Union Pacific Corporation;Stocks
+MS;Morgan Stanley;Stocks
+TTFNF;TotalEnergies SE;Stocks
+AAIGF;AIA Group Limited;Stocks
+AAGIY;AIA Group Limited;Stocks
+HSBC;HSBC Holdings plc;Stocks
+AMGN;Amgen Inc.;Stocks
+HBCYF;HSBC Holdings plc;Stocks
+PIAIF;Ping An Insurance (Group) Company of China, Ltd.;Stocks
+SNY;Sanofi;Stocks
+IBM;International Business Machines Corporation;Stocks
+WFC-PC;Wells Fargo & Company;Stocks
+PNGAY;Ping An Insurance (Group) Company of China, Ltd.;Stocks
+FMXUF;Fomento Económico Mexicano, S.A.B. de C.V.;Stocks
+CVS;CVS Health Corporation;Stocks
+TD;The Toronto-Dominion Bank;Stocks
+MDT;Medtronic plc;Stocks
+SCHW;The Charles Schwab Corporation;Stocks
+AMT;American Tower Corporation;Stocks
+UL;Unilever PLC;Stocks
+AMD;Advanced Micro Devices, Inc.;Stocks
+HON;Honeywell International Inc.;Stocks
+C;Citigroup Inc.;Stocks
+COP;ConocoPhillips;Stocks
+HESAY;Hermès International Société en commandite par actions;Stocks
+RTNTF;Rio Tinto Group;Stocks
+SPGI;S&P Global Inc.;Stocks
+ANTM;Elevance Health Inc.;Stocks
+LMT;Lockheed Martin Corporation;Stocks
+STOHF;Equinor ASA;Stocks
+UNLYF;Unilever PLC;Stocks
+LOW;Lowe's Companies, Inc.;Stocks
+CBAUF;Commonwealth Bank of Australia;Stocks
+GS;The Goldman Sachs Group, Inc.;Stocks
+CMWAY;Commonwealth Bank of Australia;Stocks
+GSK;GSK plc;Stocks
+GLAXF;GSK plc;Stocks
+BX;Blackstone Inc.;Stocks
+HESAF;Hermès International Société en commandite par actions;Stocks
+INTU;Intuit Inc.;Stocks
+SAP;SAP SE;Stocks
+EQNR;Equinor ASA;Stocks
+LFC;China Life Insurance Company Limited;Stocks
+CILJF;China Life Insurance Company Limited;Stocks
+VWAGY;Volkswagen AG;Stocks
+JD;JD.com, Inc.;Stocks
+AXP;American Express Company;Stocks
+CHDRY;Christian Dior SE;Stocks
+SAPGF;SAP SE;Stocks
+JDCMF;JD.com, Inc.;Stocks
+CHDRF;Christian Dior SE;Stocks
+NPPXF;Nippon Telegraph and Telephone Corporation;Stocks
+NTTYY;Nippon Telegraph and Telephone Corporation;Stocks
+HDB;HDFC Bank Limited;Stocks
+SONY;Sony Group Corporation;Stocks
+DTEGY;Deutsche Telekom AG;Stocks
+DGEAF;Diageo plc;Stocks
+BTAFF;British American Tobacco p.l.c.;Stocks
+SNEJF;Sony Group Corporation;Stocks
+DTEGF;Deutsche Telekom AG;Stocks
+BTI;British American Tobacco p.l.c.;Stocks
+DEO;Diageo plc;Stocks
+CTA-PB;E. I. du Pont de Nemours and Company;Stocks
+VLKAF;Volkswagen AG;Stocks
+RIO;Rio Tinto Group;Stocks
+NOW;ServiceNow, Inc.;Stocks
+BUD;Anheuser-Busch InBev SA/NV;Stocks
+CAT;Caterpillar Inc.;Stocks
+BUDFF;Anheuser-Busch InBev SA/NV;Stocks
+BLK;BlackRock, Inc.;Stocks
+VWAPY;Volkswagen AG;Stocks
+VLKPF;Volkswagen AG;Stocks
+DE;Deere & Company;Stocks
+BP;BP p.l.c.;Stocks
+EL;The Estée Lauder Companies Inc.;Stocks
+SIEGY;Siemens Aktiengesellschaft;Stocks
+SBUX;Starbucks Corporation;Stocks
+RTPPF;Rio Tinto Group;Stocks
+BPAQF;BP p.l.c.;Stocks
+PLD;Prologis, Inc.;Stocks
+SMAWF;Siemens Aktiengesellschaft;Stocks
+ADP;Automatic Data Processing, Inc.;Stocks
+CMXHF;CSL Limited;Stocks
