@@ -62,7 +62,7 @@ nodeenv==1.7.0
 numpy==1.23.1
 oauthlib==3.2.0
 opt-einsum==3.3.0
-packaging==21.0
+packaging
 pandas==1.4.3
 parse==1.19.0
 patsy==0.5.2
