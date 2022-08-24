@@ -1,91 +1,188 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import html, dcc
+from yahoo_fin import stock_info as si
+import yfinance as yf
+import pandas as pd
+import plotly.express as px
 
 dash.register_page(__name__, path='/')
 
-"""Jumbotron = dbc.Col(
-    html.Div(
+navbar = dbc.Navbar(
+    dbc.Container(
         [
-            html.H2("Algorithmic strategies dashboards", className="display-3"),
-            html.Hr(className="my-2"),
-            html.P(
-                "Swap the background-color utility and add a `.text-*` color "
-                "utility to mix up the look."
+            html.A(
+                # Use row and col to control vertical alignment of logo / brand
+                dbc.Row(
+                    [
+                        dbc.Col(html.Img(src="assets/images/QB_BW.png",
+                                         height="50px")),
+                        dbc.Col(dbc.NavbarBrand("Quantboard", className="ms-2")),
+                    ],
+                    align="center",
+                    className="g-0",
+                ),
+                href="/",
+                style={"textDecoration": "none"},
             ),
-        ],
-        className="h-100 p-5 text-white bg-dark rounded-3",
-    ),
-    md=12,
-)"""
 
-left_jumbotron = dbc.Col(
+            dbc.Nav([
+                dbc.DropdownMenu(
+                    [
+                        dbc.DropdownMenuItem("SMA", href='/SMA'),
+                        dbc.DropdownMenuItem("Momentum", href='/Momentum'),
+                        dbc.DropdownMenuItem("Mean Reversion", href='/MeanReversion'),
+                        dbc.DropdownMenuItem("Linear Regression", href="/LinearRegression"),
+                        dbc.DropdownMenuItem("Machine Learning", href="/LogisticRegression"),
+                        dbc.DropdownMenuItem("Deep learning", href="/DeepLearning"),
+                    ],
+                    nav=True,
+                    in_navbar=True,
+                    label="Strategies"
+                ),
+                dbc.DropdownMenu(
+                    children=[
+                        dbc.DropdownMenuItem(children=[html.I(className="bi bi-telegram me-2"),
+                                                       "Telegram"], href="https://t.me/yaanison"),
+                        dbc.DropdownMenuItem(children=[html.I(className="bi bi-linkedin me-2"),
+                                                       "Linkedin"], href="https://www.linkedin.com/in/yan-laitila/")
+                    ],
+                    nav=True,
+                    in_navbar=True,
+                    label="Contacts"
+                )]),
+
+        ]
+    ),
+    color="dark",
+    dark=True
+)
+
+left_jumbotron_str = dbc.Col(
     html.Div(
         [
             html.H2("SMA", className="display-3"),
             html.Hr(className="my-2"),
             html.P(
-                "Strategy uses death cross and golden cross patterns."
-            ),dbc.Row([
-                dbc.Button("Dashboard", color="light", outline=True, href="/ac")
-                   ]),
+                'The basic strategy based on the patterns of technical analysis "golden cross" and "dead cross".'
+            ), dbc.Row([
+            dbc.Button("Dashboard", color="dark", outline=True, href="/SMA", className="bottom")
+        ]),
         ],
-        className="h-100 p-5 text-white bg-dark rounded-3",
+        className="h-100 p-5 text-black bg-light border rounded-3",
     ),
     md=4,
 )
-center_jumbotron = dbc.Col(
+center_jumbotron_str = dbc.Col(
     html.Div(
         [
             html.H2("Momentum", className="display-3"),
             html.Hr(className="my-2"),
             html.P(
-                "Strategy is to buy the stock if the last N returns was positive and to sell it if it was negative."
+                "The idea of strategy is to buy rising and sell falling assets. In short, trend following."
             )
-        , dbc.Row([
-                dbc.Button("Dashboard", color="light", outline=True, href="/ac")
-                   ]),
+            , dbc.Row([
+            dbc.Button("Dashboard", color="dark", outline=True, href="/Momentum", className="bottom")
+        ])
         ],
-        className="h-100 p-5 text-white bg-dark border rounded-3",
+        className="h-100 p-5 text-black bg-light border rounded-3",
     ),
     md=4,
 )
 
-right_jumbotron = dbc.Col(
+right_jumbotron_str = dbc.Col(
     html.Div(
         [
             html.H2("Mean reversion", className="display-3"),
             html.Hr(className="my-2"),
             html.P(
-                "Coming soon"
-            )
+                "The idea is to buy if the price is below the mean level and buy if it is higher."
+            ),
+            dbc.Row([
+                dbc.Button("Dashboard", color="dark", outline=True, href="/MeanReversion", className="bottom")
+            ]),
         ],
-        className="h-100 p-5 bg-light border rounded-3",
+        className="h-100 p-5 text-black bg-light border rounded-3",
     ),
     md=4,
 )
 
-
-
-carousel = dbc.Carousel(
-    items=[
-        {"key": "1", "src": "/assets/images/slide_1.jpg"},
-        {"key": "2", "src": "/assets/images/slide_2.jpg"},
-        {"key": "3", "src": "/assets/images/slide_3.jpg"},
-        {"key": "4", "src": "/assets/images/slide_4.jpg"},
-    ],
-    controls=False,
-    indicators=False,
-    interval=4000,
-    ride="carousel",
-
-
+left_jumbotron_mp = dbc.Col(
+    html.Div(
+        [
+            html.H2("Linear regression", className="display-3"),
+            html.Hr(className="my-2"),
+            html.P(
+                "The strategy predicts the direction of the market using linear regression."
+            ),
+            dbc.Row([
+            dbc.Button("Dashboard", color="dark", outline=True, href="/LinearRegression", className="bottom")
+        ]),
+        ],
+        className="h-100 p-5 text-black bg-light border rounded-3",
+    ),
+    md=4,
+)
+center_jumbotron_mp = dbc.Col(
+    html.Div(
+        [
+            html.H2("Machine learning", className="display-3"),
+            html.Hr(className="my-2"),
+            html.P(
+                "The strategy predicts the direction of the market using logistic regression."
+            )
+            , dbc.Row([
+            dbc.Button("Dashboard", color="dark", outline=True, href="/LogisticRegression", className="bottom")
+        ]),
+        ],
+        className="h-100 p-5 text-black bg-light border rounded-3",
+    ),
+    md=4,
 )
 
-Jumbotron = [left_jumbotron,center_jumbotron, right_jumbotron]
+right_jumbotron_mp = dbc.Col(
+    html.Div(
+        [
+            html.H2("Deep learning", className="display-3"),
+            html.Hr(className="my-2"),
+            html.P(
+                "The neural network is trained and tested to predict the movement of the asset price"
+            ),
+            dbc.Row([
+                dbc.Button("Dashboard", color="dark", outline=True, href="/DeepLearning")
+            ], className="bottom-container"),
+        ],
+        className="h-100 p-5 text-black bg-light border rounded-3",
+    ),
+    md=4,
+)
 
+jmbt = html.Div(
+    dbc.Container(
+        [
+            html.H1("Quantboard", className="display-3"),
+            html.H2(
+                "Strategy backtesting platform"),
+            html.Hr(className="my-2", style={'width': '20em'}),
+            html.H4("Explore 6 different strategies with easy-to-use dashboard tool for testing trading hypotheses!",
+                    style={'width': '20em'})
+        ],
+        fluid=True,
+        className="py-3",
+    ),
+    className="p-3 rounded-3",
+    style={'background-image': 'url(assets/images/double.png)', "background-size": "cover", "height": "55vh"}
+)
 
-layout = html.Div(children=[
-    dbc.Row([carousel],style={'margin-top':'10px','margin-bottom':'10px'}),
-html.H1("Strategies",style={"textAlign": "center",'margin-top':'10px','margin-bottom':'10px'}),
-dbc.Row(Jumbotron)])
+Jumbotron_str = [left_jumbotron_str, center_jumbotron_str, right_jumbotron_str]
+Jumbotron_mp = [left_jumbotron_mp, center_jumbotron_mp, right_jumbotron_mp]
+Jumbotron_all = [left_jumbotron_str, center_jumbotron_str, right_jumbotron_str, left_jumbotron_mp, center_jumbotron_mp,
+                 right_jumbotron_mp]
+layout = html.Div(children=[navbar, jmbt,
+                            html.H1("Strategies",
+                                    style={"textAlign": "center", 'margin-top': '30px', 'margin-bottom': '10px'}),
+                            dbc.Row(Jumbotron_str,
+                                    style={'padding-left': '10px', 'padding-right': '10px', 'margin-bottom': '20px'}),
+                            dbc.Row(Jumbotron_mp,
+                                    style={'padding-left': '10px', 'padding-right': '10px', 'margin-bottom': '20px'}),
+                            ])

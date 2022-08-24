@@ -49,33 +49,27 @@ class SMAVectorBacktester(object):
         implements a brute force optimizeation for the two SMA parameters
     '''
 
-    def __init__(self, symbol, SMA1, SMA2, start, end):
+    def __init__(self, symbol, SMA1, SMA2, start, end, amount, tc):
         self.symbol = symbol
         self.SMA1 = SMA1
         self.SMA2 = SMA2
+        self.rawdata=None
+        self.amount = amount
+        self.tc = tc
         self.start = start
         self.end = end
         self.results = None
         self.get_data()
 
-    def get_data_old(self):
-        ''' Retrieves and prepares the data.
-        '''
-        raw = pd.read_csv('http://hilpisch.com/pyalgo_eikon_eod_data.csv',
-                          index_col=0, parse_dates=True).dropna()
-        raw = pd.DataFrame(raw[self.symbol])
-        raw = raw.loc[self.start:self.end]
-        raw.rename(columns={self.symbol: 'price'}, inplace=True)
-        raw['return'] = np.log(raw / raw.shift(1))
-        raw['SMA1'] = raw['price'].rolling(self.SMA1).mean()
-        raw['SMA2'] = raw['price'].rolling(self.SMA2).mean()
-        raw = raw.reset_index()
-        self.data = raw
-        return self.data
 
     def get_results(self):
 
         return self.results
+
+    def get_raw(self):
+
+        return self.rawdata
+
     def get_data(self):
         ''' Retrieves and prepares the data.
         '''
@@ -83,9 +77,7 @@ class SMAVectorBacktester(object):
         raw = yf.Ticker(self.symbol).history(period = "max", actions=False)
         raw = raw["Close"].to_frame().rename({"Close": "price"}, axis='columns')
         raw.index.names = ['Date']
-        ###raw = raw.rename({"1. open": "Open", "2. high": "High","3. low": "Low","4. close": "price","5. volume": "Volume"}, axis='columns')
-        #+raw = pd.read_csv('http://hilpisch.com/pyalgo_eikon_eod_data.csv',index_col=0, parse_dates=True).dropna()
-        #+raw = pd.DataFrame(raw[self.symbol])
+        self.rawdata = raw.copy()
         raw['return'] = np.log(raw / raw.shift(1))
         raw['SMA1'] = raw['price'].rolling(self.SMA1).mean()
         raw['SMA2'] = raw['price'].rolling(self.SMA2).mean()
@@ -114,10 +106,13 @@ class SMAVectorBacktester(object):
         data = self.data.copy().dropna()
         data['position'] = np.where(data['SMA1'] > data['SMA2'], 1, -1)
         data['strategy'] = data['position'].shift(1) * data['return']
+        data['returns in %'] = data['strategy']*100
         data['entry'] = data.position.diff()
         data.dropna(inplace=True)
-        data['creturns'] = data['return'].cumsum().apply(np.exp)
-        data['cstrategy'] = data['strategy'].cumsum().apply(np.exp)
+        trades = data['position'].diff().fillna(0) != 0
+        data['strategy'][trades] -= self.tc
+        data['creturns'] = self.amount * data['return'].cumsum().apply(np.exp)
+        data['cstrategy'] = self.amount * data['strategy'].cumsum().apply(np.exp)
         self.results = data
         # gross performance of the strategy
         aperf = data['cstrategy'].iloc[-1]
