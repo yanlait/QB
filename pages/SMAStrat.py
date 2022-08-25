@@ -22,7 +22,7 @@ dash.register_page(__name__, path='/SMA')
 
 # Read stocks list
 
-path = "/Users/yanlaytila/Desktop/Yftickers.csv"
+path = "assets/Yftickers.csv"
 stocks = pd.read_csv(path, sep=";")
 stocks["Label"] = stocks["Ticker"] + " | " + stocks["Name"]
 stocks.rename(columns={'Label': "label", 'Ticker': "value"}, inplace=True)
@@ -413,7 +413,7 @@ layout = html.Div(children=
     [dash.dependencies.Input('category-dropdown_sma', 'value')])
 def assets_options(category):
     url = "https://drive.google.com/uc?id=17PC74DXlz0dlKvf04Mjv6xEh7wK7Mtt2"
-    path = "/Users/yanlaytila/Desktop/Yftickers.csv"
+    path = "assets/Yftickers.csv"
     stocks = pd.read_csv(path, sep=";")
     stocks = stocks[stocks["Category"] == category]
     stocks["Label"] = stocks["Ticker"] + " | " + stocks["Name"]
