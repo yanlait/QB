@@ -33,7 +33,7 @@ A web-based platform for backtesting various trading strategies on stocks and cr
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/yanlait/QB
 cd QB
 ```
 
